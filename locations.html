@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gensys Labs | Locations</title>
+    <link rel="stylesheet" href="locations.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        color: #003b3b;
+      }
+
+      h1,
+      h3 {
+        margin: 0;
+      }
+
+      .header {
+        background: #ffffff;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #e5f4f4;
+      }
+
+      .logo-space {
+        width: 180px;
+        height: 60px;
+        background-color: #e8fafa;
+        display: block;
+        border-radius: 6px;
+      }
+
+      .nav-menu a {
+        margin-left: 25px;
+        text-decoration: none;
+        color: #007b7b;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .nav-menu a:hover {
+        color: #0066cc;
+      }
+
+      .nav-menu .active {
+        color: #00a0a0;
+      }
+
+      .page-title {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .page-title h1 {
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      .page-title span {
+        color: teal;
+      }
+
+      .search-bar-section {
+        text-align: center;
+        margin: 30px auto;
+      }
+
+      .search-input {
+        width: 350px;
+        padding: 12px 15px;
+        border: 2px solid #00a0a0;
+        border-radius: 8px;
+        font-size: 16px;
+      }
+
+      .search-btn {
+        padding: 12px 18px;
+        margin-left: 10px;
+        background-color: teal;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .search-btn:hover {
+        background-color: #006b6b;
+      }
+
+      .locations-wrapper {
+        width: 75%;
+        margin: 0 auto 80px auto;
+      }
+
+      .location-card {
+        display: flex;
+        align-items: flex-start;
+        padding: 20px 0;
+        border-bottom: 1px solid #e5f4f4;
+      }
+
+      .location-img {
+        width: 260px;
+        height: 150px;
+        background-color: #a8e6e6;
+        border-radius: 6px;
+        margin-right: 20px;
+      }
+
+      .location-content h3 {
+        color: #0077aa;
+        font-size: 22px;
+        margin-bottom: 5px;
+      }
+
+      .location-content p {
+        margin-top: 4px;
+        margin-bottom: 8px;
+        line-height: 1.5;
+      }
+
+      .phone {
+        text-decoration: none;
+        font-weight: bold;
+        color: teal;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+
+      .phone:hover {
+        color: #005577;
+      }
+
+      .dir-btn {
+        padding: 10px 16px;
+        background-color: #0077bb;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .dir-btn:hover {
+        background-color: #005fa0;
+      }
+
+      footer {
+        background-color: whitesmoke;
+        padding: 40px;
+        margin-top: 40px;
+      }
+
+      .footer-section {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer-box {
+        width: 48%;
+      }
+
+      .footer-box h3 {
+        font-size: 26px;
+        color: teal;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="gensysmain.html" class="logo-space">
+        <img src="aplogo.png" />
+      </a>
+
+      <nav class="nav-menu">
+        <a href="gensysmain.html">Home</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="#" class="active">Locations</a>
+        <a href="#">Careers</a>
+        <a href="#">Research</a>
+      </nav>
+    </header>
+
+    <section class="page-title">
+      <h1><span>5</span> Locations</h1>
+    </section>
+
+    <section class="search-bar-section">
+      <input
+        type="text"
+        placeholder="Search Gensys Labs locations..."
+        class="search-input"
+      />
+      <button class="search-btn">Search</button>
+    </section>
+
+    <section class="locations-wrapper">
+      <div class="location-card">
+        <div class="location-img">
+          <img src="main.png" alt="" />
+        </div>
+        <div class="location-content">
+          <h3>Main Gensys Headquarters</h3>
+          <p>
+            125 Innovation Drive<br />
+            New Delhi, India
+          </p>
+          <a href="#" class="phone">+91 98765 43210</a>
+          <button class="dir-btn">Directions</button>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="location-img">
+          <img src="l2.png" />
+        </div>
+        <div class="location-content">
+          <h3>Gensys Diagnostics Center</h3>
+          <p>
+            44 Genome Street<br />
+            Lucknow, India
+          </p>
+          <a href="#" class="phone">+91 99887 32100</a>
+          <button class="dir-btn">Directions</button>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="location-img">
+          <img src="l3.png" />
+        </div>
+        <div class="location-content">
+          <h3>Gensys Research Facility</h3>
+          <p>
+            92 Research Valley<br />
+            Hyderabad, India
+          </p>
+          <a href="#" class="phone">+91 88990 22110</a>
+          <button class="dir-btn">Directions</button>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="location-img">
+          <img src="l4.png" alt="" />
+        </div>
+        <div class="location-content">
+          <h3>Gensys Clinical Lab</h3>
+          <p>
+            118 BioTech Park<br />
+            Bengaluru, India
+          </p>
+          <a href="#" class="phone">+91 77660 11220</a>
+          <button class="dir-btn">Directions</button>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="location-img">
+          <img src="l5.png" />
+        </div>
+        <div class="location-content">
+          <h3>Gensys Health Testing Center</h3>
+          <p>
+            56 Medical Lane<br />
+            Pune, India
+          </p>
+          <a href="#" class="phone">+91 81234 45670</a>
+          <button class="dir-btn">Directions</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-section">
+        <div class="footer-box">
+          <h3>Contact Us</h3>
+          <p>Email - xyz@gmail.com</p>
+          <p>Phone - 55555</p>
+          <div class="yt">
+            <a href=""><img src="yt.png" alt="" /></a
+            ><a href=""><img src="ins.png" alt="" /></a>
+
+            <a href=""><img src="twt.png" /></a>
+          </div>
+        </div>
+        <div class="footer-box">
+          <a href="#"><h3>Support Us</h3></a>
+          <p>
+            At Gensys Labs Institute, every idea has the power to become a
+            breakthrough. Your support helps us nurture talent, expand research,
+            and push the boundaries of science. Stand with us—and be part of a
+            mission that inspires, educates, and elevates society.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

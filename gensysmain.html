@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gensys Labs Hospital</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: #003b49;
+      }
+
+      header {
+        width: 100%;
+        padding: 20px;
+        background-color: white;
+        position: relative;
+        border-bottom: 2px solid teal;
+      }
+
+      #logo {
+        width: 180px;
+        height: 70px;
+        background-color: #e0e0e0;
+        margin-left: 20px;
+        display: inline-block;
+      }
+
+      #search-bar {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+      }
+
+      #search-bar input {
+        padding: 8px;
+        width: 240px;
+        border: 2px solid teal;
+      }
+      #auth-buttons {
+        position: absolute;
+        top: 65px; /* pushes it below search bar */
+        right: 20px;
+        display: flex;
+        gap: 15px;
+      }
+
+      #auth-buttons button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        border: 2px solid teal;
+        background-color: white;
+        color: teal;
+        font-weight: bold;
+        transition: 0.3s ease;
+      }
+
+      #auth-buttons .signup-btn {
+        background-color: teal;
+        color: white;
+      }
+
+      #auth-buttons button:hover {
+        opacity: 0.8;
+      }
+
+      nav {
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+
+      nav a {
+        margin-right: 30px;
+        text-decoration: none;
+        color: #00c8d6;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      nav a:hover {
+        color: blue;
+      }
+
+      #hero {
+        width: 100%;
+        height: 320px;
+        background-color: #b2e0df;
+        margin-top: 30px;
+      }
+
+      .three-boxes,
+      .four-boxes,
+      .two-boxes {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+        gap: 20px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+      .three-boxes .box:hover {
+        background-color: rgb(243, 240, 240);
+      }
+
+      .box,
+      .small-box {
+        border: 1px solid #cfcfcf;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: white;
+      }
+
+      .box {
+        width: 32%;
+      }
+
+      .small-box {
+        width: 23%;
+      }
+
+      .box img,
+      .small-box img {
+        width: 100%;
+        height: 150px;
+        background-color: #e0e0e0;
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      h2,
+      h3 {
+        text-align: center;
+        color: teal;
+        font-size: 32px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+
+      a {
+        color: #00c8d6;
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      #teal-banner {
+        background-color: teal;
+        padding: 30px;
+        text-align: center;
+        color: white;
+        margin: 40px 20px;
+        font-size: 28px;
+      }
+      #teal-banner:hover {
+        background-color: #106751;
+      }
+
+      #teal-banner a {
+        color: white;
+        font-size: 28px;
+      }
+
+      .two-boxes {
+        justify-content: center;
+        width: 1500px;
+        height: 500px;
+      }
+      .two-boxes .box:hover {
+        opacity: 0.7;
+      }
+
+      .two-boxes .box {
+        background-color: #f6ffff;
+        border: 2px solid teal;
+      }
+
+      #help-section {
+        margin: 40px 20px;
+        padding: 30px;
+        background-color: teal;
+        color: white;
+      }
+
+      #help-section h2 {
+        color: white;
+        font-size: 38px;
+      }
+
+      form label {
+        font-size: 18px;
+      }
+
+      form input,
+      form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0 20px 0;
+        box-sizing: border-box;
+        border: 2px solid teal;
+      }
+
+      form button {
+        background-color: rgb(242, 246, 247);
+        color: black;
+        padding: 12px 25px;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      form button:hover {
+        background-color: #0093a0;
+      }
+      footer {
+        background-color: whitesmoke;
+        padding: 40px;
+        margin-top: 40px;
+      }
+
+      .footer-section {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer-box {
+        width: 48%;
+      }
+
+      .footer-box h3 {
+        font-size: 26px;
+        color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="mainlogo.png" />
+      </div>
+
+      <div id="search-bar">
+        <input type="text" placeholder="Search..." />
+      </div>
+      <div id="auth-buttons">
+        <button class="login-btn">Login</button>
+        <button class="signup-btn">Sign Up</button>
+      </div>
+
+      <nav>
+        <a href="appointments.html">Appointments</a>
+        <a href="locations.html">Locations & Directions</a>
+        <a href="#">Institutes & Departments</a>
+        <a href="#">Health Library</a>
+        <a href="#">Careers</a>
+      </nav>
+    </header>
+
+    <div id="hero">
+      <img src="hero.jpeg" alt="" />
+    </div>
+
+    <div class="three-boxes">
+      <div class="box">
+        <img src="appointments.jpeg" />
+        <a href="appointments.html">Appointments</a>
+        <p>Get the care you need</p>
+      </div>
+      <div class="box">
+        <img src="location.png" />
+        <a href="locations.html">Locations and Directions</a>
+        <p>Find any of our locations</p>
+      </div>
+      <div class="box">
+        <img src="institutes.png" />
+        <a href="#">Institutes and Departments</a>
+        <p>Find any of our institutions</p>
+      </div>
+    </div>
+
+    <h2>Where accuracy meets expertise</h2>
+
+    <div class="four-boxes">
+      <div class="small-box">
+        <img src="pcc.png" />
+        <p>Patient centered care</p>
+      </div>
+      <div class="small-box">
+        <img src="nat.png" />
+        <p>National recognition</p>
+      </div>
+      <div class="small-box">
+        <img src="coll.png" />
+        <p>Collaborative providers</p>
+      </div>
+      <div class="small-box">
+        <img src="rnd.png" />
+        <p>Innovation and research</p>
+      </div>
+    </div>
+
+    <div id="teal-banner">
+      <a href="#">Health Library</a>
+    </div>
+
+    <div class="two-boxes">
+      <div class="box">
+        <a href="#"><h3>Careers</h3></a>
+        <p>
+          Your next big opportunity starts at Gensys Labs. Join a team that
+          values talent, encourages creativity, and supports your journey.Learn
+          from leading experts while working on real-world research that makes a
+          difference.
+        </p>
+        <img style="height: 250px" src="carr.png" />
+      </div>
+      <div class="box">
+        <a href="#"><h3>Education and Research</h3></a>
+        <p>
+          Choose Gensys Labs Institute and unlock opportunities that shape your
+          future. From cutting-edge labs to world-class mentors, we empower you
+          to excel. Join us and turn your passion into powerful achievements.
+        </p>
+        <img style="height: 250px" src="edu.png" />
+      </div>
+    </div>
+
+    <div id="help-section">
+      <h2>Need Help?</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" />
+
+        <label>Email:</label>
+        <input type="email" />
+
+        <label>Address:</label>
+        <input type="text" />
+
+        <label>Phone Number:</label>
+        <input type="text" />
+
+        <label>Queries:</label>
+        <textarea rows="5"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer-section">
+        <div class="footer-box">
+          <h3>Contact Us</h3>
+          <p>Email - xyz@gmail.com</p>
+          <p>Phone - 55555</p>
+          <div class="yt">
+            <a href=""><img src="yt.png" alt="" /></a
+            ><a href=""><img src="ins.png" alt="" /></a>
+
+            <a href=""><img src="twt.png" /></a>
+          </div>
+        </div>
+        <div class="footer-box">
+          <a href="#"><h3>Support Us</h3></a>
+          <p>
+            At Gensys Labs Institute, every idea has the power to become a
+            breakthrough. Your support helps us nurture talent, expand research,
+            and push the boundaries of science. Stand with us—and be part of a
+            mission that inspires, educates, and elevates society.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
