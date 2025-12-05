@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login | Gensys Labs</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #ffffff;
+        color: #003b3b;
+      }
+
+      /* HEADER */
+      .logo {
+        width: 170px;
+        height: 60px;
+        background: #e0fafa;
+        margin: 20px;
+        border-radius: 6px;
+        display: inline-block;
+      }
+
+      .logo:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      /* FORM BOX */
+      .container {
+        width: 380px;
+        margin: 70px auto;
+        padding: 30px;
+        background: #e6ffff;
+        border-radius: 12px;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        text-align: center;
+        color: teal;
+        margin-bottom: 25px;
+      }
+
+      label {
+        font-weight: bold;
+        color: #005555;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0 15px 0;
+        border: 2px solid teal;
+        border-radius: 8px;
+        font-size: 15px;
+      }
+
+      .role-box {
+        margin-bottom: 15px;
+        color: #003b3b;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 12px;
+        background: teal;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 17px;
+        cursor: pointer;
+        margin-top: 5px;
+      }
+
+      .btn:hover {
+        background: #006b6b;
+      }
+
+      .switch {
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .switch a {
+        color: teal;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .switch a:hover {
+        color: #0077aa;
+      }
+
+      .error {
+        color: red;
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+    </style>
+
+    <script>
+      function validateLogin() {
+        let email = document.getElementById("email").value;
+        let pass = document.getElementById("password").value;
+        let error = "";
+
+        if (!email.includes("@") || !email.includes(".com")) {
+          error += "❌ Invalid email format<br>";
+        }
+
+        if (!/\d/.test(pass)) {
+          error += "❌ Password must contain at least one number<br>";
+        }
+
+        document.getElementById("error-box").innerHTML = error;
+
+        return error === "";
+      }
+    </script>
+  </head>
+
+  <body>
+    <a href="gensysmain.html"
+      ><div class="logo"><img src="mainlogo.png" /></div
+    ></a>
+
+    <div class="container">
+      <h2>Login</h2>
+
+      <div id="error-box" class="error"></div>
+
+      <form onsubmit="return validateLogin()">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter password" />
+
+        <div class="role-box">
+          <label
+            ><input type="radio" name="role" value="patient" checked />
+            Patient</label
+          ><br />
+          <label
+            ><input type="radio" name="role" value="employee" /> Employee</label
+          >
+        </div>
+
+        <button class="btn">Login</button>
+      </form>
+
+      <div class="switch">
+        Don't have an account? <a href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </body>
+</html>
