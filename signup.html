@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Login | Gensys Labs</title>
+    <title>Sign Up | Gensys Labs</title>
 
     <style>
       body {
@@ -12,7 +12,6 @@
         color: #003b3b;
       }
 
-      /* HEADER */
       .logo {
         width: 170px;
         height: 60px;
@@ -27,7 +26,6 @@
         cursor: pointer;
       }
 
-      /* FORM BOX */
       .container {
         width: 380px;
         margin: 70px auto;
@@ -103,22 +101,25 @@
       }
     </style>
 
-    
+    <script src="signup.js"></script>
   </head>
 
   <body>
     <a href="gensysmain.html"
-      ><div class="logo"><img src="mainlogo.png" /></div
+      ><div class="logo"><img src="mainlogo.png" alt="" /></div
     ></a>
 
     <div class="container">
-      <h2>Login</h2>
+      <h2>Create Account</h2>
 
       <div id="error-box" class="error"></div>
 
-      <form onsubmit="return validateLogin()">
+      <form onsubmit="return validateSignup()">
+        <label>Username</label>
+        <input type="text" id="username" placeholder="Enter username" />
+
         <label>Email</label>
-        <input type="email" id="email" placeholder="Enter your email" />
+        <input type="email" id="email" placeholder="Enter email" />
 
         <label>Password</label>
         <input type="password" id="password" placeholder="Enter password" />
@@ -133,13 +134,12 @@
           >
         </div>
 
-        <button class="btn">Login</button>
+        <button class="btn">Sign Up</button>
       </form>
 
       <div class="switch">
-        Don't have an account? <a href="signup.html">Sign up</a>
+        Already have an account? <a href="login.html">Login</a>
       </div>
     </div>
-    <script src="./login.js"></script>
   </body>
 </html>

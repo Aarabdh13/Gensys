@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Institutes & Departments - Gensys Labs Hospital</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: #003b49;
+      }
+
+      /* ---------- NAVBAR ---------- */
+
+      .navbar {
+        width: 100%;
+        background-color: #003b49;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 40px;
+      }
+
+      .navbar .logo img {
+        width: 140px; /* adjust based on your logo */
+        cursor: pointer;
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar ul li {
+        margin-left: 25px;
+      }
+
+      .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        transition: 0.3s;
+      }
+
+      .navbar ul li a:hover {
+        color: #cce7e8;
+      }
+
+      header {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0 10px 0;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 28px;
+        margin: 0;
+        color: #003b49;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 40px;
+      }
+
+      .section-title {
+        font-size: 22px;
+        margin: 20px 0;
+        font-weight: bold;
+        color: #003b49;
+        border-left: 5px solid #003b49;
+        padding-left: 10px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background-color: #f5f5f5;
+        padding: 20px;
+        border-radius: 10px;
+        border-left: 6px solid #003b49;
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        background-color: #e6f2f3;
+        transform: translateY(-4px);
+      }
+
+      .card h3 {
+        margin-top: 0;
+        font-size: 20px;
+      }
+
+      .card p {
+        margin: 0;
+        color: #555;
+        line-height: 1.5;
+      }
+
+      @media (max-width: 600px) {
+        .navbar {
+          flex-direction: column;
+          padding: 15px;
+        }
+
+        .navbar ul li {
+          margin-left: 15px;
+        }
+
+        .navbar ul {
+          margin-top: 10px;
+        }
+      }
+      footer {
+        background-color: whitesmoke;
+        padding: 40px;
+        margin-top: 40px;
+      }
+
+      .footer-section {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer-box {
+        width: 48%;
+      }
+
+      .footer-box h3 {
+        font-size: 26px;
+        color: teal;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <div class="logo">
+        <a href="gensysmain.html">
+          <img src="mainlogo.png" alt="Gensys Labs Logo" />
+        </a>
+      </div>
+
+      <ul>
+        <li><a href="gensysmain.html">Home</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="careers.html">Careers</a></li>
+      </ul>
+    </div>
+
+    <!-- PAGE TITLE -->
+    <header>
+      <h1>Institutes & Departments</h1>
+    </header>
+
+    <div class="container">
+      <!-- Institutes Section -->
+      <div class="section-title">Our Institutes</div>
+      <div class="grid">
+        <div class="card">
+          <h3>Institute of Advanced Medical Sciences</h3>
+          <p>
+            A flagship institute dedicated to cutting-edge patient care, complex
+            surgeries, and breakthrough research in medicine.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Institute of Precision Diagnostics</h3>
+          <p>
+            Focused on high-accuracy testing, genomic analysis, and molecular
+            diagnostics.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Institute of Digital Health & AI</h3>
+          <p>
+            Innovating AI-powered tools, predictive analytics, and smart
+            healthcare systems.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Institute of Clinical Research</h3>
+          <p>
+            Conducts world-class clinical trials, translational research, and
+            real-world data studies.
+          </p>
+        </div>
+      </div>
+
+      <!-- Departments Section -->
+      <div class="section-title">Departments</div>
+      <div class="grid">
+        <div class="card">
+          <h3>Department of Cardiology</h3>
+          <p>
+            Expert heart care, interventional treatments, and long-term cardiac
+            rehabilitation.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Department of Neurology</h3>
+          <p>
+            Specialised care for stroke, epilepsy, and neurodegenerative
+            disorders.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Department of Oncology</h3>
+          <p>
+            Comprehensive cancer diagnosis, chemotherapy, radiation therapy, and
+            counselling.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Department of Pediatrics</h3>
+          <p>
+            Child health, vaccinations, neonatal care, and developmental
+            monitoring.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Department of Orthopedics</h3>
+          <p>
+            Bone, joint, and spine care with advanced minimally invasive
+            procedures.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Department of Emergency & Trauma</h3>
+          <p>
+            24×7 critical care, rapid response teams, and advanced trauma
+            management.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-section">
+        <div class="footer-box">
+          <h3>Contact Us</h3>
+          <p>Email - xyz@gmail.com</p>
+          <p>Phone - 55555</p>
+          <div class="yt">
+            <a href=""><img src="yt.png" alt="" /></a
+            ><a href=""><img src="ins.png" alt="" /></a>
+
+            <a href=""><img src="twt.png" /></a>
+          </div>
+        </div>
+        <div class="footer-box">
+          <a href="#"><h3>Support Us</h3></a>
+          <p>
+            At Gensys Labs Institute, every idea has the power to become a
+            breakthrough. Your support helps us nurture talent, expand research,
+            and push the boundaries of science. Stand with us—and be part of a
+            mission that inspires, educates, and elevates society.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
