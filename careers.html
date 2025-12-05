@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gensys Labs Careers</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: #004d4d;
+      }
+
+      header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        background-color: white;
+        border-bottom: 2px solid #008b8b;
+      }
+
+      .logo-placeholder {
+        width: 160px;
+        height: 50px;
+        background-color: #e6ffff;
+        border: 2px dashed #008b8b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      nav a {
+        margin-left: 25px;
+        text-decoration: none;
+        color: #006666;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 8px 12px;
+        border-radius: 5px;
+      }
+
+      nav a:hover {
+        background-color: #008b8b;
+        color: white;
+      }
+
+      .career-section {
+        padding: 40px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .career-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      .career-box {
+        background-color: #e0f7f7;
+        border-left: 6px solid #008b8b;
+        padding: 25px;
+        border-radius: 8px;
+      }
+
+      .career-box h2 {
+        margin-top: 0;
+        font-size: 26px;
+        color: #006666;
+      }
+
+      .career-box p {
+        font-size: 17px;
+        color: #004d4d;
+      }
+
+      /* FORM */
+      .apply-form {
+        margin-top: 50px;
+        padding: 30px;
+        background-color: #e6ffff;
+        border-radius: 10px;
+        border-left: 6px solid #008b8b;
+      }
+
+      .apply-form h2 {
+        color: #006666;
+        margin-top: 0;
+        font-size: 28px;
+      }
+
+      .apply-form label {
+        display: block;
+        margin-top: 15px;
+        font-size: 18px;
+        color: #004d4d;
+      }
+
+      .apply-form input,
+      .apply-form select {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        margin-top: 5px;
+        border: 2px solid #008b8b;
+        border-radius: 5px;
+      }
+
+      .apply-form button {
+        margin-top: 25px;
+        padding: 14px 20px;
+        background-color: #008b8b;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .apply-form button:hover {
+        background-color: #006666;
+      }
+
+      footer {
+        margin-top: 40px;
+        background-color: #008b8b;
+        color: white;
+        padding: 25px;
+        text-align: center;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="gensysmain.html">
+        <div class="logo-placeholder"><img src="aplogo.png" /></div>
+      </a>
+
+      <nav>
+        <a href="gensysmain.html">Home</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="locations.html">Locations</a>
+        <a href="instdept.html">Institutes</a>
+      </nav>
+    </header>
+
+    <section class="career-section">
+      <h1 style="font-size: 34px; color: #006666; margin-bottom: 25px">
+        Careers at Gensys Labs
+      </h1>
+
+      <div class="career-grid">
+        <div class="career-box">
+          <h2>Administrative</h2>
+          <p>
+            Administrative professionals keep Gensys Labs running smoothly by
+            managing scheduling, documentation, coordination between
+            departments, and ensuring seamless operations.
+          </p>
+        </div>
+
+        <div class="career-box">
+          <h2>Pharmacy</h2>
+          <p>
+            Our pharmacy team ensures accurate medication dispensing, supports
+            clinical staff, maintains inventory, and provides essential
+            pharmaceutical guidance.
+          </p>
+        </div>
+
+        <div class="career-box">
+          <h2>Facilities</h2>
+          <p>
+            The facilities department handles maintenance, safety compliance,
+            equipment checks, and ensures a clean, secure, and efficient
+            environment.
+          </p>
+        </div>
+
+        <div class="career-box">
+          <h2>Nursing</h2>
+          <p>
+            Nurses play a critical role in patient care, monitoring health,
+            providing support, coordinating with physicians, and ensuring
+            compassionate service.
+          </p>
+        </div>
+
+        <div class="career-box">
+          <h2>Physicians</h2>
+          <p>
+            Physicians deliver high-quality diagnosis, treatment, and medical
+            expertise while leading patient-focused healthcare practices.
+          </p>
+        </div>
+      </div>
+
+      <form class="apply-form">
+        <h2>Apply Now</h2>
+
+        <label>Name</label>
+        <input type="text" required />
+
+        <label>Email</label>
+        <input type="email" required />
+
+        <label>Phone Number</label>
+        <input type="tel" required />
+
+        <label>Apply For</label>
+        <select required>
+          <option value="Facilities">Facilities</option>
+          <option value="Nursing">Nursing</option>
+          <option value="Physicians">Physicians</option>
+          <option value="Administrative">Administrative</option>
+          <option value="Pharmacy">Pharmacy</option>
+        </select>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </section>
+
+    <footer>© 2025 Gensys Labs — Careers & Opportunities</footer>
+  </body>
+</html>

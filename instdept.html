@@ -13,8 +13,6 @@
         color: #003b49;
       }
 
-      /* ---------- NAVBAR ---------- */
-
       .navbar {
         width: 100%;
         background-color: #003b49;
@@ -26,7 +24,7 @@
       }
 
       .navbar .logo img {
-        width: 140px; /* adjust based on your logo */
+        width: 140px;
         cursor: pointer;
       }
 
@@ -144,11 +142,13 @@
         font-size: 26px;
         color: teal;
       }
+      .active {
+        color: #00a0a0;
+      }
     </style>
   </head>
 
   <body>
-    <!-- NAVBAR -->
     <div class="navbar">
       <div class="logo">
         <a href="gensysmain.html">
@@ -159,18 +159,17 @@
       <ul>
         <li><a href="gensysmain.html">Home</a></li>
         <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="instdept.html" class="active">Institutes</a></li>
         <li><a href="locations.html">Locations</a></li>
         <li><a href="careers.html">Careers</a></li>
       </ul>
     </div>
 
-    <!-- PAGE TITLE -->
     <header>
       <h1>Institutes & Departments</h1>
     </header>
 
     <div class="container">
-      <!-- Institutes Section -->
       <div class="section-title">Our Institutes</div>
       <div class="grid">
         <div class="card">
@@ -206,7 +205,6 @@
         </div>
       </div>
 
-      <!-- Departments Section -->
       <div class="section-title">Departments</div>
       <div class="grid">
         <div class="card">

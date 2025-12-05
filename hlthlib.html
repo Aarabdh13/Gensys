@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Library - Gensys Labs</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: #003b49;
+      }
+
+      .header {
+        width: 100%;
+        background-color: #e0f4f4;
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .logo {
+        font-size: 22px;
+        font-weight: bold;
+        color: #003b49;
+        text-decoration: none;
+      }
+
+      .navbar a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #006d6d;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        color: #004c8c;
+      }
+
+      .search-container {
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      .search-container input {
+        width: 60%;
+        padding: 15px;
+        border: 2px solid #008080;
+        border-radius: 30px;
+        font-size: 18px;
+        outline: none;
+      }
+
+      .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 30px;
+        width: 85%;
+        margin: auto;
+        margin-bottom: 60px;
+      }
+
+      .box {
+        background-color: #f0fafa;
+        border: 2px solid #008080;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        transition: 0.3s;
+      }
+
+      .box:hover {
+        background-color: #d7efef;
+        transform: translateY(-5px);
+      }
+
+      .image-space {
+        width: 100%;
+        height: 150px;
+        background-color: #cceeee;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+
+      .box-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #003b49;
+      }
+      footer {
+        background-color: whitesmoke;
+        padding: 40px;
+        margin-top: 40px;
+      }
+
+      .footer-section {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer-box {
+        width: 48%;
+      }
+
+      .footer-box h3 {
+        font-size: 26px;
+        color: teal;
+      }
+      .active {
+        color: #00a0a0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="gensysmain.html" class="logo"><img src="aplogo.png" /></a>
+
+      <div class="navbar">
+        <a href="gensysmain.html">Home</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="locations.html">Locations</a>
+        <a href="instdept.html">Institutes</a>
+        <a href="careers.html">Careers</a>
+      </div>
+    </div>
+
+    <div class="search-container">
+      <input type="text" placeholder="Search in Health Library..." />
+    </div>
+
+    <div class="box-container">
+      <div class="box">
+        <div class="image-space"><img src="organs.png" /></div>
+        <div class="box-title">Organs</div>
+      </div>
+
+      <div class="box">
+        <div class="image-space"><img src="diseases.png" /></div>
+        <div class="box-title">Diseases</div>
+      </div>
+
+      <div class="box">
+        <div class="image-space"><img src="symptoms.png" /></div>
+        <div class="box-title">Symptoms</div>
+      </div>
+
+      <div class="box">
+        <div class="image-space"><img src="procedures.png" /></div>
+        <div class="box-title">Procedures</div>
+      </div>
+
+      <div class="box">
+        <div class="image-space">
+          <img src="drugs.png" />
+        </div>
+        <div class="box-title">Drugs</div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-section">
+        <div class="footer-box">
+          <h3>Contact Us</h3>
+          <p>Email - xyz@gmail.com</p>
+          <p>Phone - 55555</p>
+          <div class="yt">
+            <a href=""><img src="yt.png" alt="" /></a
+            ><a href=""><img src="ins.png" alt="" /></a>
+
+            <a href=""><img src="twt.png" /></a>
+          </div>
+        </div>
+        <div class="footer-box">
+          <a href="#"><h3>Support Us</h3></a>
+          <p>
+            At Gensys Labs Institute, every idea has the power to become a
+            breakthrough. Your support helps us nurture talent, expand research,
+            and push the boundaries of science. Stand with us—and be part of a
+            mission that inspires, educates, and elevates society.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
