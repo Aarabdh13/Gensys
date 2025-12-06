@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support Us</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: white;
+        color: #003b49; /* deep teal */
+      }
+
+      .logo {
+        display: inline-block;
+        padding: 15px 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #006d77; /* lighter teal */
+        text-decoration: none;
+      }
+
+      .container {
+        margin-top: 80px;
+        text-align: center;
+        padding: 20px;
+      }
+
+      h1 {
+        color: #006d77;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Logo (acts as home link) -->
+    <a href="gensysmain.html" class="logo"><img src="mainlogo.png" /></a>
+
+    <div class="container">
+      <h1>Support Us</h1>
+      <p>
+        Your contribution helps us improve healthcare, research, and education.
+      </p>
+    </div>
+    <div style="text-align: center">
+      <button id="minus">-</button>
+      <span id="qty">1</span>
+      <button id="plus">+</button>
+      <p>Total: rs<span id="total">500</span></p>
+      <script>
+        let m = document.getElementById("minus");
+        let p = document.getElementById("plus");
+        let q = document.getElementById("qty");
+        let t = document.getElementById("total");
+        let qnt = 1;
+        let price = 500;
+
+        p.addEventListener("click", function () {
+          qnt++;
+          q.textContent = qnt;
+          t.textContent = price * qnt;
+        });
+        m.addEventListener("click", function () {
+          if (qnt > 1) {
+            qnt--;
+            q.textContent = qnt;
+            t.textContent = price * qnt;
+          }
+        });
+      </script>
+      <button>Pay</button>
+    </div>
+  </body>
+</html>
